@@ -1,0 +1,14 @@
+@import "./parciales/variables";
+@import "./parciales/generales";  
+@import "./parciales/tipografia"; 
+@import "./parciales/header"; 
+@import "./parciales/hero";
+@import "./parciales/apps";
+@import "./parciales/beneficios";
+@import "./parciales/formulario"; 
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: $cyan;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}

@@ -1,0 +1,13 @@
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}hr{background:linear-gradient(225deg, #f24e1dff, #80ba01ff, #00a5efff, #ffbb01ff, #747474ff);height:0.5rem !important;opacity:1 !important;margin:0 !important}p{font-size:1.2rem}@media (min-width: 768px) and (max-width: 1024px){p{font-size:calc(
+ 1.2rem + 
+ num(1rem)-num(1.2rem) * 
+ (100vw - 768px) / 
+ num(1024px)-num(768px))}}@media (min-width: 1024px){p{font-size:1rem}}h1{font-size:2rem}@media (min-width: 768px) and (max-width: 1024px){h1{font-size:calc(
+ 2rem + 
+ num(1.8rem)-num(2rem) * 
+ (100vw - 768px) / 
+ num(1024px)-num(768px))}}@media (min-width: 1024px){h1{font-size:1.8rem}}h2{font-size:1.6rem}@media (min-width: 768px) and (max-width: 1024px){h2{font-size:calc(
+ 1.6rem + 
+ num(1.2rem)-num(1.6rem) * 
+ (100vw - 768px) / 
+ num(1024px)-num(768px))}}@media (min-width: 1024px){h2{font-size:1.2rem}}input[type="email"]{background-color:#747474ff;border:none}.apps__article--word{background-color:#00a5efff}.apps__article--excel{background-color:#80ba01ff}.apps__article--powerpoint{background-color:#f24e1dff}.apps__article--outlook{background-color:#6495ed}.apps__article--onedrive{background-color:#747474ff}.apps__article--skype{background-color:#0076BA}.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:2rem;box-shadow:2px 6px 5px 0px rgba(0,0,0,0.23);-webkit-box-shadow:2px 6px 5px 0px rgba(0,0,0,0.23);-moz-box-shadow:2px 6px 5px 0px rgba(0,0,0,0.23);z-index:999;position:relative}.header__contenedor img{max-width:100%;height:40px}.hero{height:80vh;background-color:#fff;background-image:url(../img/bg-mujer-alpha.png);background-position:right top;background-size:contain;background-repeat:no-repeat;display:-ms-grid;display:grid;-ms-flex-line-pack:space-evenly;align-content:space-evenly}@media screen and (max-width: 768px){.hero{height:auto}.hero__img--app{display:none}}@media screen and (max-width: 425px){.hero{background:none}}.hero__img{width:35%;position:absolute;left:40%;top:20%;height:auto}@media screen and (max-width: 425px){.hero__img{position:relative;left:0;width:auto;top:0}}.hero__btn{background-color:#f24e1dff;color:#fff;font-size:1rem;border:none}.hero__img--app{width:90%;display:block;margin:auto}.apps__img{width:48px;display:block;margin:auto}.accordion-button:not(.collapsed){color:#fff;background-color:#00a5efff;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.125);box-shadow:inset 0 -1px 0 rgba(0,0,0,0.125)}

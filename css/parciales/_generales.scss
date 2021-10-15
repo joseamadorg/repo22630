@@ -1,0 +1,48 @@
+@import "./variables"; 
+@import "./tipografia"; 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    background: $gradient-top-left;
+    height: 0.5rem !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+}
+
+p{ 
+    @include font-size(1.2rem, 1rem);
+}
+  
+h1{
+    @include font-size(2rem, 1.8rem)
+}
+
+h2 {
+    @include font-size(1.6rem, 1.2rem)
+}
+
+input[ type="email"]{
+    background-color: $gris;
+    border: none;
+}
+
+$apps: ( 
+        word: $cyan,
+        excel: $verde,
+        powerpoint: $naranja,
+        outlook: cornflowerblue, 
+        onedrive: $gris,
+        skype: $azul-txt 
+); 
+
+@each $app, $color in $apps {
+   .apps__article--#{$app} {
+       background-color: $color;
+   }
+}
+

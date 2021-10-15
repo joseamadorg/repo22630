@@ -1,0 +1,49 @@
+@import "./variables"; 
+@import "./responsive"; 
+
+.hero {
+    height: 80vh;
+    background-color: #fff;
+    background-image: url(../../img/bg-mujer-alpha.png);
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: space-evenly;
+   
+    @include tablet{
+        height: auto;    
+        &__img--app{
+            display: none;
+        }
+    }
+    @include movil{
+        background: none;  
+    }
+    &__img{
+        width: 35%;
+        position: absolute;
+        left: 40%; 
+        top: 20%;
+        height: auto;
+        @include movil {
+            position: relative;
+            left: 0; 
+            width: auto;
+            top: 0; 
+        }  
+        
+}
+    &__btn{
+        background-color: $naranja;
+        color: #fff; 
+        font-size: 1rem;
+        border: none;
+    }
+    &__img--app{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+}

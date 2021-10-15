@@ -1,0 +1,37 @@
+/*
+créditos del mixin: https://codepen.io/jakob-e/pen/yVyYzv
+*/
+
+//  delimitación de la escala de fuente predeterminada
+$font-lock-min:  768px !default; 
+$font-lock-max: 1024px !default;
+
+//  declaracion del mixin font-size 
+@mixin font-size(
+  $min, //local                       
+  $max: null, //local                  
+  $lock-min: $font-lock-min, //local
+  $lock-max: $font-lock-max  //local  
+  ){
+    & { font-size: $min; }
+    @if $max {
+      @media (min-width: $lock-min) and (max-width: $lock-max){ 
+        & { 
+          font-size: calc(
+            #{$min} + 
+            #{num($max) - num($min)} * 
+            (100vw - #{$lock-min}) / 
+            #{num($lock-max) - num($lock-min)}
+          ); 
+        } 
+      }
+      @media (min-width: $lock-max){ 
+        & { font-size: $max; } 
+      }
+    }
+}
+
+/* Haciendo uso del mixin de arriba con @include podemos declarar los valores máximos y minimos [en ese orden] 
+en los breakpoints declarados en las variables: $font-lock-min & $font-lock-max: */
+
+
